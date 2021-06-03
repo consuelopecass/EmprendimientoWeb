@@ -292,5 +292,12 @@ fonts size
     display: flex;
   }
 }
+.header {
+  max-width: 100vh;
+  margin: 0 auto;
+}
+.header__img img {
+  width: 100%;
+}
 
 /*# sourceMappingURL=style.css.map */
