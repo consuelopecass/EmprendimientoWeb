@@ -14,25 +14,25 @@
 
 <body>
     <!--Navbar-->
-    <nav>
-        <div>
+    <nav class="navbar">
+        <div class="navbar__logo">
             <img src="./assets/img/logo.svg" alt="Logo">
         </div>
-        <div>
-            <ul>
-                <a href="">
-                    <li>Acerca de</li>
-                </a>
-                <a href="">
-                    <li>Cursos</li>
-                </a>
-                <a href="">
-                    <li>Precios</li>
-                </a>
+        <div class="navbar__container">
+            <ul class="navbar__list">
+                <li class="navbar__item">
+                    <a href="#">Acerca de</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#">Cursos</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#">Precios</a>
+                </li>
             </ul>
         </div>
         <div>
-            <label for="menu">
+            <label class="navbar__menu" for="menu">
                 <i class="fas fa-bars"></i>
             </label>
         </div>
@@ -40,100 +40,102 @@
     <!--Fin Navbar-->
 
     <!--Header-->
-    <header>
-        <div>
-            <img src="./assets/img/desarrolloweb2021t.svg" alt="">
+    <header class="header">
+        <div class="header__img">
+            <img src="./assets/img/desarrolloweb2021t.svg" alt="hero">
         </div>
     </header>
     <!--Fin Header-->
 
     <!-- Main -->
-    <main>
+    <main class="main">
         <section class="cursos">
-            <article>
-                <div>
+            <article class="cursos__articulo">
+                <div class="cursos__img">
                     <img src="/assets/img/html-y-cssb-.jpg" alt="Curso HTML y CSS">
                 </div>
-                <h3>HTML y CSS para principiantes.</h3>
-                <p>
+                <h3 class="cursos__titulo">HTML y CSS para principiantes.</h3>
+                <p class="cursos__parrafo">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, illum? Vel ipsum repellat minus quasi? Quisquam labore explicabo ducimus, eum laudantium, voluptas commodi exercitationem dolores inventore delectus temporibus expedita alias. In quasi nesciunt
                     facere tenetur quaerat odio voluptate totam fugiat modi voluptates, nemo, error impedit minus necessitatibus non, consectetur rem maxime asperiores assumenda dolore consequatur itaque. Quos eaque provident aut.
                 </p>
-                <p>
+                <p class="cursos__instructor">
                     Instructor: Manuel González
                 </p>
-                <ul>
-                    <li><i class="far fa-thumbs-up"></i>1</li>
-                    <li><i class="far fa-comments"></i>9</li>
-                    <li><i class="far fa-eye"></i>9</li>
-                    <li><i class="fas fa-share-alt"></i>0</li>
+                <ul class="cursos__lista">
+                    <li class="cursos__item"><i class="far fa-thumbs-up"></i>1</li>
+                    <li class="cursos__item"><i class="far fa-comments"></i>9</li>
+                    <li class="cursos__item"><i class="far fa-eye"></i>9</li>
+                    <li class="cursos__item"><i class="fas fa-share-alt"></i>0</li>
                 </ul>
             </article>
-            <article>
-                <div>
+            <article class="cursos__articulo">
+                <div class="cursos__img">
                     <img src="/assets/img/sass.png" alt="Curso de Sass">
                 </div>
-                <h3>Estilo con SASS.</h3>
-                <p>
+                <h3 class="cursos__titulo">Estilo con SASS.</h3>
+                <p class="cursos__parrafo">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, illum? Vel ipsum repellat minus quasi? Quisquam labore explicabo ducimus, eum laudantium, voluptas commodi exercitationem dolores inventore delectus temporibus expedita alias. In quasi nesciunt
                     facere tenetur quaerat odio voluptate totam fugiat modi voluptates, nemo, error impedit minus necessitatibus non, consectetur rem maxime asperiores assumenda dolore consequatur itaque. Quos eaque provident aut.
                 </p>
-                <p>
+                <p class="cursos__instructor">
                     Instructor: Manuel González
                 </p>
-                <ul>
-                    <li><i class="far fa-thumbs-up"></i>1</li>
-                    <li><i class="far fa-comments"></i>9</li>
-                    <li><i class="far fa-eye"></i>8</li>
-                    <li><i class="fas fa-share-alt"></i>5</li>
+                <ul class="cursos__lista">
+                    <li class="cursos__item"><i class="far fa-thumbs-up"></i>1</li>
+                    <li class="cursos__item"><i class="far fa-comments"></i>9</li>
+                    <li class="cursos__item"><i class="far fa-eye"></i>8</li>
+                    <li class="cursos__item"><i class="fas fa-share-alt"></i>5</li>
                 </ul>
             </article>
         </section>
 
         <section class="nosotros">
-            <article>
-                <img src="/assets/img/web-development.png" alt="">
-                <h3>Cursos 2020 LTDA</h3>
-                <ul>
-                    <li><i class="fab fa-facebook-f"></i></li>
-                    <li><i class="fab fa-twitter"></i></li>
-                    <li><i class="fab fa-github"></i></li>
+            <article class="nosotros__container">
+                <div class="nosotros__img">
+                    <img src="/assets/img/web-development.png" alt="">
+                </div>
+                <h3 class="nosotros__titulo">Cursos 2020 LTDA</h3>
+                <ul class="nosotros__redes">
+                    <li class="nosotros__icono"><i class="fab fa-facebook-f"></i></li>
+                    <li class="nosotros__icono"><i class="fab fa-twitter"></i></li>
+                    <li class="nosotros__icono"><i class="fab fa-github"></i></li>
                 </ul>
-                <div>
-                    <button>
-                        MÁS CURSOS
+                <div class="nosotros__boton">
+                    <button class="button--grande">
+                        Más Cursos
                     </button>
                 </div>
-                <ul>
-                    <a href="">
-                        <li>Analitica Web (3)</li>
-                    </a>
-                    <a href="">
-                        <li>Diseño Web (4)</li>
-                    </a>
-                    <a href="">
-                        <li>Desarrollo BackEnd (9)</li>
-                    </a>
-                    <a href="">
-                        <li>Seguridad Informática (4)</li>
-                    </a>
-                    <a href="">
-                        <li>Social Media (7)</li>
-                    </a>
-                    <a href="">
-                        <li>SEO (8)</li>
-                    </a>
-                    <a href="">
-                        <li>UX/UI (3)</li>
-                    </a>
-                    <a href="">
-                        <li>JavaScript (5)</li>
-                    </a>
-                    <a href="">
-                        <li>VueJS (1)</li>
-                    </a>
+                <ul class="nosotros__listado">
+                    <li class="nosotros__cursos">
+                        <a href="#">Analitica Web (3)</a>
+                    </li>
+                    <li class="nosotros__cursos">
+                        <a href="#">Diseño Web (4)</a>
+                    </li>
+                    <li class="nosotros__cursos">
+                        <a href="#">Desarrollo BackEnd (9)</a>
+                    </li>
+                    <li class="nosotros__cursos">
+                        <a href="#">Seguridad Informática (4)</a>
+                    </li>
+                    <li class="nosotros__cursos">
+                        <a href="#">Social Media (7)</a>
+                    </li>
+                    <li class="nosotros__cursos">
+                        <a href="#">SEO (8)</a>
+                    </li>
+                    <li class="nosotros__cursos">
+                        <a href="#">UX/UI (3)</a>
+                    </li>
+                    <li class="nosotros__cursos">
+                        <a href="#">JavaScript (5)</a>
+                    </li>
+                    <li class="nosotros__cursos">
+                        <a href="#">VueJS (1)</a>
+                    </li>
                 </ul>
-                <div>
+                <div class="nosotros__svg">
                     <img src="/assets/img/web.svg" alt="">
                 </div>
             </article>
@@ -142,24 +144,25 @@
     <!-- Fin Main -->
 
     <!-- Footer -->
-    <footer>
-        <div>
+    <footer class="footer">
+        <div class="footer__copy">
             <small>&copy; 2021 | Todos los derechos reservados</small>
         </div>
-        <ul>
-            <li>
+        <ul class="footer__lista">
+            <li class="footer__item">
                 <a href="#">Legal</a>
             </li>
-            <li>
+            <li class="footer__item">
                 <a href="#">Sobre Anuncios</a>
             </li>
-            <li>
-                <input class="menu__input" type="email" name="email" placeholder="e-mail" />
+            <li class="footer__item">
+                <input class="footer__input" type="email" name="email" placeholder="e-mail" />
             </li>
             <li>
-                <button>
-                    Enviar
-                </button>
+                <div class="footer__boton">
+                    <button class="button--chico">Enviar</button>
+                </div>
+
             </li>
         </ul>
     </footer>
