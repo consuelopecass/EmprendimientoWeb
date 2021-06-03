@@ -1,0 +1,81 @@
+.navbar {
+    background-color: $black;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 20px;
+    width: 100%;
+    &__logo {
+        img {
+            width: 40px;
+            height: 40px;
+            margin-left: 5px;
+        }
+    }
+    &__container {
+        display: flex;
+        justify-content: flex-end;
+        flex-grow: 1;
+    }
+    &__list {
+        display: none;
+        justify-content: flex-end;
+        flex-grow: 1;
+        a {
+            color: $white;
+            font-family: $primary-font;
+            font-size: $font-medium;
+            font-weight: $primary-font-bold;
+            text-decoration: none;
+            list-style: none;
+            margin: 0 20px;
+        }
+    }
+    &__menu {
+        font-size: $font-x-large;
+        color: $white;
+    }
+}
+
+
+/*tamaño celular*/
+
+@include respond-to($bp-sm) {
+    .navbar {
+        &__menu {
+            display: none;
+        }
+        &__list {
+            display: flex;
+        }
+    }
+}
+
+
+/*tamaño tablet*/
+
+@include respond-to($bp-md) {
+    .navbar {
+        &__menu {
+            display: none;
+        }
+        &__list {
+            display: flex;
+        }
+    }
+}
+
+
+/* tamaño desktop*/
+
+@include respond-to($bp-lg) {
+    .navbar {
+        &__menu {
+            display: none;
+        }
+        &__list {
+            display: flex;
+        }
+    }
+}
