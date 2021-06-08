@@ -1,0 +1,32 @@
+.footer {
+    background-color: $black;
+    padding: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    color: $white;
+    font-family: $primary-font;
+    margin-top: 15px;
+    &__lista {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: space-between;
+    }
+    &__item {
+        font-size: $font-x-small;
+        margin: 0 20px;
+        list-style: none;
+        a {
+            text-decoration: none;
+            list-style: none;
+            color: $white;
+        }
+        button {
+            text-decoration: none;
+            list-style: none;
+        }
+    }
+}
