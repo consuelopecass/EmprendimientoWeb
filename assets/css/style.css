@@ -59,6 +59,8 @@ fonts size
   margin: 0 auto;
 }
 .button--chico {
+  padding: 4px 10px;
+  background-color: #FFAF6D;
   text-decoration: none;
   list-style: none;
   font-size: 0.75rem;
@@ -345,23 +347,17 @@ fonts size
   background-color: #000;
   padding: 2rem;
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   color: #FFF;
   font-family: "Ubuntu", sans-serif;
   margin-top: 15px;
 }
-.footer__lista {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-items: center;
-  align-content: space-between;
-}
 .footer__item {
-  font-size: 0.75rem;
-  margin: 0 20px;
+  display: block;
+  font-size: 1rem;
+  text-align: center;
+  margin: 15px;
   list-style: none;
 }
 .footer__item a {
@@ -373,18 +369,51 @@ fonts size
   text-decoration: none;
   list-style: none;
 }
+.footer__item:nth-child(4) {
+  margin: 0;
+}
+.footer__input {
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+  margin: 0;
+}
+.footer__copy {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
 
-.main {
-  display: flex;
+/*tamaño tablet*/
+@media (min-width: 992px) {
+  .footer {
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #FFF;
+    font-family: "Ubuntu", sans-serif;
+    margin-top: 15px;
+  }
+  .footer__lista {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-between;
+  }
+  .footer__item {
+    margin: 0 15px;
+    list-style: none;
+  }
 }
 .main .cursos {
-  width: 50%;
+  width: 98%;
+  margin: 0 auto;
   border: 0.0625rem solid #000;
-  margin: 0.125rem 0.375rem;
   padding: 0.1875rem;
 }
 .main .cursos__articulo {
-  border: 0.0313rem solid lightslategray;
+  border: 0.0313rem dotted lightslategray;
   margin: 1.25rem 0.9375rem;
   padding: 0.3125rem;
 }
@@ -424,9 +453,9 @@ fonts size
   margin: 0.25rem;
 }
 .main .nosotros {
-  width: 50%;
+  width: 98%;
   border: 0.0625rem solid #000;
-  margin: 0.125rem 0.375rem;
+  margin: 0 auto;
   padding: 0.1875rem;
 }
 .main .nosotros__img {
@@ -503,6 +532,21 @@ fonts size
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   transform-origin: 80% 80%;
+}
+
+/*tamaño celular*/
+@media (min-width: 768px) {
+  .main {
+    display: flex;
+  }
+  .main .cursos {
+    width: 50%;
+    margin: 0.125rem 0.375rem;
+  }
+  .main .nosotros {
+    width: 50%;
+    margin: 0.125rem 0.375rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
